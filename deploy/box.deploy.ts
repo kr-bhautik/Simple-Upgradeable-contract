@@ -3,8 +3,9 @@ import { deployments, getNamedAccounts, upgrades } from "hardhat";
 export default async function main() {
     
     const {Deployer} = await getNamedAccounts();
-    const BoxContract = await deployments.deploy('BoxV2', {
+    const BoxContract = await deployments.deploy('Box', {
         from: Deployer,
+        contract: 'BoxV3',
         proxy: {
             execute: {
                 init: {

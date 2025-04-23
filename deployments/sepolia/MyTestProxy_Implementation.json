@@ -1,0 +1,89 @@
+{
+  "address": "0x9F750D0B0bB35ECde4626cee4554E6C35cD765DC",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "increment",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "retrieve",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_val",
+          "type": "uint256"
+        }
+      ],
+      "name": "set",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0x876b44d9bead14f55d6c2d5132a1a3d4f9f6af292143dbeb58c44d3ad2dfef41",
+  "receipt": {
+    "to": null,
+    "from": "0xbacD42136E696110521fB6ACE75b716a83dfaB20",
+    "contractAddress": "0x9F750D0B0bB35ECde4626cee4554E6C35cD765DC",
+    "transactionIndex": 63,
+    "gasUsed": "160969",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0xdc26b1d24a565ee7fc8682806f82e70264edcfaa707fb434aaa09e99b706d873",
+    "transactionHash": "0x876b44d9bead14f55d6c2d5132a1a3d4f9f6af292143dbeb58c44d3ad2dfef41",
+    "logs": [],
+    "blockNumber": 8179094,
+    "cumulativeGasUsed": "5343799",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "numDeployments": 2,
+  "solcInputHash": "5029d8504587fedd0682950d6726afd7",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.28+commit.7893614a\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"increment\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"retrieve\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_val\",\"type\":\"uint256\"}],\"name\":\"set\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/TestV2.sol\":\"TestV2\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/TestV2.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity ^0.8.0;\\n\\ncontract TestV2 {\\n    uint256 private val;\\n\\n    // Stores a new value in the contract\\n    function set(uint256 _val) public {\\n        val = _val;\\n    }\\n\\n    // Reads the last stored value\\n    function retrieve() public view returns (uint256) {\\n        return val;\\n    }\\n\\n    function increment() public {\\n        val++;\\n    }\\n}\",\"keccak256\":\"0x86f9d82848185f051e54c0ad1dc2db14e8e6fce71b470331b578fa6bfc34d112\",\"license\":\"MIT\"}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b506101f58061001f6000396000f3fe608060405234801561001057600080fd5b50600436106100415760003560e01c80632e64cec11461004657806360fe47b114610064578063d09de08a14610080575b600080fd5b61004e61008a565b60405161005b91906100cf565b60405180910390f35b61007e6004803603810190610079919061011b565b610093565b005b61008861009d565b005b60008054905090565b8060008190555050565b6000808154809291906100af90610177565b9190505550565b6000819050919050565b6100c9816100b6565b82525050565b60006020820190506100e460008301846100c0565b92915050565b600080fd5b6100f8816100b6565b811461010357600080fd5b50565b600081359050610115816100ef565b92915050565b600060208284031215610131576101306100ea565b5b600061013f84828501610106565b91505092915050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052601160045260246000fd5b6000610182826100b6565b91507fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff82036101b4576101b3610148565b5b60018201905091905056fea264697066735822122047ef3f2483269a5c4c0b7ded9882c6a56a1522a477ae23433c65fd8c675a5d2464736f6c634300081c0033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100415760003560e01c80632e64cec11461004657806360fe47b114610064578063d09de08a14610080575b600080fd5b61004e61008a565b60405161005b91906100cf565b60405180910390f35b61007e6004803603810190610079919061011b565b610093565b005b61008861009d565b005b60008054905090565b8060008190555050565b6000808154809291906100af90610177565b9190505550565b6000819050919050565b6100c9816100b6565b82525050565b60006020820190506100e460008301846100c0565b92915050565b600080fd5b6100f8816100b6565b811461010357600080fd5b50565b600081359050610115816100ef565b92915050565b600060208284031215610131576101306100ea565b5b600061013f84828501610106565b91505092915050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052601160045260246000fd5b6000610182826100b6565b91507fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff82036101b4576101b3610148565b5b60018201905091905056fea264697066735822122047ef3f2483269a5c4c0b7ded9882c6a56a1522a477ae23433c65fd8c675a5d2464736f6c634300081c0033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 3,
+        "contract": "contracts/TestV2.sol:TestV2",
+        "label": "val",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_uint256"
+      }
+    ],
+    "types": {
+      "t_uint256": {
+        "encoding": "inplace",
+        "label": "uint256",
+        "numberOfBytes": "32"
+      }
+    }
+  }
+}
